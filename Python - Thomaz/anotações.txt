@@ -1,0 +1,33 @@
+link da aula de configurações:
+    https://www.youtube.com/watch?v=eEiQiV-GS2k&list=PLxPzsNPW0coIW7bqyw7GeuiIet5IHhYz_&index=5
+
+link da playlist:
+    https://www.youtube.com/playlist?list=PLxPzsNPW0coIW7bqyw7GeuiIet5IHhYz_
+
+Acessar a engrenagem do vs code, configurações, clicar no icone no canto superior direito para acessar settings.json.
+    Exemplo:
+    {
+    "window.zoomLevel": 1,
+    "editor.fontSize": 16,
+    "editor.minimap.enabled": false,
+    "files.autoSave": "afterDelay",
+    "editor.linkedEditing": true,
+    "editor.stickyScroll.enabled": false
+    }
+
+criar ambiente virtual:
+    python -m venv venv
+
+ativar o ambiente virtual:
+    venv\Scripts\activate - pressionar TAB para autocompletar.
+    deactivate - desativa o ambiente virtual
+
+criar o projeto:
+    django-admin startproject nomedoprojeto .
+    obs.: o ponto(.) ao final da linha acima indica que o projeto a ser criado deverá ficar dentro da pasta atual, sem criar uma subpasta.
+
+ativar o servidor:
+    python manage.py runserver
+
+vendo:
+    https://www.youtube.com/watch?v=2GAPjhWORQQ&list=PLxPzsNPW0coIW7bqyw7GeuiIet5IHhYz_&index=14
