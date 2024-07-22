@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: verdana, 'Geneva', Tahoma, sans-serif;
+    --fonte2: 'Passion One', 'cursive';
+    --fonte3: 'Sriracha', 'cursive';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh; /*porcentagem horizontal da tela a ser usada (trocar h por w caso queira vertical*/
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase; ------ passa o texto para maiúscula*/
+    font-variant: small-caps; /*passa para o texto para maiúscula mas apenas as íniciais ficam grandes*/   
+    font-family: var(--fonte2); 
+    font-size: 10vw; /*tamanho da fonte 10% em relação à largura da tela*/
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a { /*para servir para o cabeçalho e o rodapé e não para demais links*/
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover { /*para servir para o cabeçalho e o rodapé e não para demais links*/
+    color: white;
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh; /*ocupar 10% da tela, alem de ajustar à tela quando redimensionada*/
+    padding-bottom: 10vh;
+    line-height: 2em; /*espaço entre linhas*/
+    padding-left: 30px; /*espaço à esquerda das letras, tipo tabulação*/
+    font-family: var(--fonte3);
+    font-size: 3.5vw;/*tamanho da fonte % em relação à largura da tela*/
+}
+
+section p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473); /*insert faz o sombreamento para dentro*/
+    background-size: cover;
+    background-attachment: fixed; /*fixar a imagem, não rolar*/
+}
+
+section.imagem > p {
+    display: inline-block; /*ajusta o p ao tamanho do conteúdo*/
+    padding: 5px; /*espaço de margem do texto tipo tabulação*/
+    background-color: rgba(0, 0, 0, 0.514);  
+    text-shadow: 1px 1px 0px black;   
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;    
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    /* background-position: right center; */    
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
