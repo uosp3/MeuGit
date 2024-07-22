@@ -5,6 +5,8 @@ python -m venv venv
 . venv/Scripts/activate
 pip install django
 django-admin startproject project .
+python manage.py startapp contact  <!--- faz o mesmo que a linha acima mas para depois do projeto criado ->
+<!-- depois de criado o app inclua-o em project(no arquivo settings.py) -->
 ```
 
 Configurar o git
@@ -19,4 +21,4 @@ git add .    <!-- adiciona todos os arquivos para o git (exceto ignore) fazer is
 git commit -m 'Mensagem'
 git log      <!-- para ver o que foi no commit -->
 git remote add origin URL_DO_GIT
-git push origin master   <!-- enviar os arquivos -->
+git push   <!-- enviar os arquivos -->
