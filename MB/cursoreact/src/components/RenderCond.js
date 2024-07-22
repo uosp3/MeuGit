@@ -1,0 +1,15 @@
+const RenderCond = ({x, y}) => {
+  return (
+    <div>
+      {x > 5 && <p>X é maior que 5</p>}
+      {x > 5 ? (
+        <p>X é um mumero maior que 5</p>
+      ) : (
+        <p>X é um número menor ou igual a 5</p>
+      )}
+      <p>O valor de y é : {y}</p>
+    </div>
+  )
+}
+
+export default RenderCond

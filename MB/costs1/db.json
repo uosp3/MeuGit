@@ -1,0 +1,73 @@
+{
+  "projects": [
+    {
+      "category": {
+        "id": "1",
+        "name": "infra"
+      },
+      "name": "Edson1",
+      "budget": "50000",
+      "cost": 2500,
+      "services": [
+        {
+          "name": "Edson aleluia2",
+          "cost": "2500",
+          "description": "vai",
+          "id": "5723631d-e8fb-4705-8705-a7fdae878661"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Edson2",
+      "budget": "60000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "name": "Edson3",
+      "budget": "70000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "Edson4",
+      "budget": "80000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "infra"
+    },
+    {
+      "id": 2,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    }
+  ]
+}
