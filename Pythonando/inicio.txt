@@ -1,0 +1,28 @@
+pip install django
+venv\Scripts\Activate
+liberar/autorizar o terminal do windows a rodar script
+    Para mudar a politica de execução do PowerShell podemos usar o seguinte comando como Administrador:
+         set-executionpolicy unrestricted
+         Para verificar como esta a restrição use o seguinte:
+         get-executionpolicy
+
+python manage.py runserver   -  rodar o app
+
+python manage.py createsuperuser  - criar usuário admin
+
+python manage.py startapp usuarios  - cria um app
+apos a criação do app ele deve ser incluido em 'settings.py' em
+    INSTALLED_APPS = [
+        'medico',
+        'paciente'
+    ]
+incluir também em
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path('usuarios/', include('usuarios.urls')),
+        path('medicos/', include('medico.urls')),
+        path('pacientes/', include('pacientes.urls'))
+    ]
+
+
+parei 00:32 do video 4
