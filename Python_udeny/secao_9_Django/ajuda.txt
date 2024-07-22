@@ -1,0 +1,41 @@
+Available subcommands: django-admin 'comando'
+o manage.py faz o mesmo que o django-admim
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    optimizemigration
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+Observe que apenas os comandos principais do Django estão listados, pois as configurações não estão configuradas corretamente (erro: Configuração solicitada INSTALLED_APPS, mas as configurações não estão configuradas. Você deve definir a variável de ambiente DJANGO_SETTINGS_MODULE ou chamar settings.configure() antes de acessar as configurações.).
+
+*"*"*"*"*"*"*"*"*"*"*"*"*"*"**"*"*"*"*"*"*"*"*"*"*"*
+Para criar um app: python manage.py startapp nome_do_app
+https://www.udemy.com/course/python-3-do-zero-ao-avancado/learn/lecture/37423566#questions
+
+# HTTP Request <-> HTTP Response
+# MVT Model View Template, variação de MVC Model View Control
+
+
+TemplateDoesNotExist at / - Erro causado pela falto do app no arquivo
+settings.py do projeto na parte INSTALLED_APPS 

@@ -1,0 +1,10 @@
+# https://www.udemy.com/course/python-3-do-zero-ao-avancado/learn/lecture/36690386#questions
+# https://pyinstaller.org/en/stable/
+# https://www.pythonguis.com/tutorials/packaging-pyside6-applications-windows-pyinstaller-installforge/
+
+
+# PARA WINDOWS:
+#  https://www.udemy.com/course/python-3-do-zero-ao-avancado/learn/lecture/36690394#questions
+
+# Entrar na pasta do projeto (cd.... calculadora), pelo terminal
+# digitar: pyinstaller --name="Calculadora" --noconfirm --noconsole --onefile --add-data='../files/;files/' --icon='../files/icon.png' --clean --log-level=WARN --distpath="pastasaida/dist" --workpath="pastasaida/build" --specpath="pastasaida/" main.py

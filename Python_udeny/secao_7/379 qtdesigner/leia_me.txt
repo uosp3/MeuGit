@@ -1,0 +1,4 @@
+O arquivo window.ui gera o arquivo window.py
+
+Para fazer isto use o comando:
+pyuic5 -o '.\secao_7\379 qtdesigner\src\window2.py' '.\secao_7\379 qtdesigner\ui\window.ui'     
