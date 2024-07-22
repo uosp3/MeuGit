@@ -19,3 +19,5 @@ git add .    <!-- adiciona todos os arquivos para o git (exceto ignore) fazer is
 git commit -m 'Mensagem'
 git log      <!-- para ver o que foi no commit -->
 git remote add origin URL_DO_GIT
+
+git push origin master   <!-- enviar os arquivos -->
