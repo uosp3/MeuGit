@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    position: relative;
+    height: 100vh;    
+   
+}
+
+section#telefone {
+    position: absolute;/*permite configurar duas propriedades: left e top, vide abaixo*/
+
+    /*as 2 linhas abaixo faz o objeto ficar no centro do container, considerando o ponto superior esquerdo*/
+    top: 50%;
+    left: 50%;
+    /*a linha abaixo faz o ajuste para o objeto (conteúdo) fique centro com centro em relação ao main*/
+    transform: translate(-50%, -50%);
+
+    height: 627px;
+    width: 311px;
+    
+    background: url('/imagens/frame-iphone.png') no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 267px;
+    height: 471px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;   
+    margin: 10px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box; /*a borda passa a fazer parte da caixa (imagem) - necessário para a configuração da borda em img:hover (abaixo) não fazer com que as outras imagens se movam quando passar o mouse sobre uma delas.*/
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgb(255, 255, 255, 0.637);
+    transform: translate(-3px, -3px); /*cria a impressão que a imagem deu uma leve levantada ao passa o mouse*/
+    box-shadow: 5px 5px 10px grba(0, 0, 0, 0.623);
+    transition: transform 0.5s, border 1s; /*tempo de transição para o movimento da imagem*/
+
+}

@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    /*na linha acima pode ser colocado vírgula no final e acrescentar mais uma url para outro tipo de fonte*/
+    font-weight: normal;
+    font-style: normal;
+    /*Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (apple Advanced Typography)
+        - svg
+    */
+}
+
+:root {  /*variáveis em CSS*/
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+    --fonte-android: 'Android', 'cursive';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);    
+}
+
+a.externo::after {
+    content: '\00A0\1F517'; /*Acrescenta um espaço e uma figura antes dos link externos*/
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;/*altura mínima*/
+    text-align: center;
+    padding: 40px; /*afastar do topo*/
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 500px;
+    padding: 0px 10px 0px 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363);    
+}
+
+nav > a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.8s; /* tempo de transição quando sai o mouse de cima*/
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main {
+    min-width: 300px; /*largura mínima*/
+    max-width: 1000px; /*largura máxima*/
+    margin: auto; /*torna a margem automática dos lados*/
+    margin-bottom: 30px; /*afastar do rodapé*/
+    padding: 20px; /*afastamento da margem*/
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);    
+    border-radius: 0px 0px 10px 10px; /*arredonda os cantos de baixo*/
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8pem;
+}
+
+main h2 {    
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 5px;
+}
+
+main p { /*p dentro de main em qq nível, pode estar dentro de outras tags*/
+    margin: 15px 0px; /*afastar o texto dos parágrafos dos outros elementos de cima e de baixo*/
+    text-align: justify;
+    text-indent: 30px; /*tabulação do início do p*/
+    line-height: 2em; /*regula o espaço entre as linhas*/
+    font-size: 1em;    
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bolder;    
+}
+
+main a {    
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);    
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img {
+    width: 100%; /*as imagens terão a largura de 100% independente do conteúdo. Faz com que elas se adaptem ao tamanho da tela */
+}
+
+main img.pequena {
+    max-width: 350px; /*limita o tamanho da imagem, recurso para não ter que gerar uma imagem a mais (pequena)*/
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.42%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px; /*"engordar" um pouco o backgraund-color*/
+    margin: -10px -10px 0px -10px; /*ajustar as margens para tirar os espaços em volta do background-color. O sinal negativo faz a margem vazar pra fora*/
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: "\2714\00A0\00A0"; /*2714 é o código para o símbolo que se quer ao lado da lista, a contrabarra é necessária. 00A0 é o código para "espaço"*. Alguns navegadores não aceitam isso.*/
+    list-style-position: inside; /*coloca o marcador da lista para dentro do aside*/    
+    columns: 2; /*divide a lista em 2 colunas*/
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);     
+}
