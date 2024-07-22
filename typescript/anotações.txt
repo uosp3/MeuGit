@@ -1,0 +1,6 @@
+https://www.youtube.com/watch?v=lCemyQeSCV8&t=1030s parei em 40:15
+
+https://www.youtube.com/watch?v=0mYq5LrQN1s&t=1193s ver isto
+
+tsc -w (para ativar a atualização do arquivo js gerado pelo tsc)
+
