@@ -1,0 +1,10 @@
+Nome....:Edson
+Telefone:(33)99999.9999
+E-mail..:email@email.com.br
+Obs.....:Arquivo gerado pela aula 59
+
+Nome....:Edson 2
+Telefone:(33)88888.8888
+E-mail..:email2@email.com.br
+Obs.....:Arquivo gerado pela aula 59b
+
