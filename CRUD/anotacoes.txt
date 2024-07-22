@@ -1,0 +1,2 @@
+Fonte
+https://www.luiztools.com.br/post/tutorial-de-crud-com-node-js-sequelize-e-mysql/#comment-1946
