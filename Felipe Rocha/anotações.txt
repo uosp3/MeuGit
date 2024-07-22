@@ -1,0 +1,30 @@
+https://www.youtube.com/watch?v=IOfDoyP1Aq0
+parei no instante 1:27 minutos.
+
+
+ver este sobre react
+https://www.youtube.com/watch?v=ErjWNvP6mko
+
+para rodar o arquivo
+npm run start:dev
+isso vai executar o arquivo index.js que é referenciado no 'package.json'
+
+
+
+/////////////////////////////////////
+Eu tive esse mesmo problema e consertei com duas soluções:
+
+Faça o downgrade do seu Mongoose. As versões mais recentes pararam de aceitar retornos de chamada. Eu pessoalmente fiz downgrade para v6.10.0
+npm uninstall mongoose
+npm install mongoose@6.10.0
+Altere a função de retorno de chamada para métodos then/catch ou use async/await. Assim, por exemplo, em vez de:
+myModel.find({}).exec((err, res) => {
+  //callback code
+});
+Basta remover sua função .exec() e substituí-la por .then()/.catch():
+
+myModel.find({}).then((res) => {
+  //if succeded do this block of code
+}).catch((err) => {
+  //catch error
+});
