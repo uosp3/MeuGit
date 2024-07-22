@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'topo.css';
+
+:root {
+  
+}
+
+.btnPadrao{
+    display: flex;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.campoForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.campoForm label{
+    font-size: large;
+}
+.campoForm input{
+    border: 1px solid #888;
+    padding: 3px;
+    border-radius: 3px;
+}

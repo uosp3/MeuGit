@@ -1,0 +1,21 @@
+.caixa {
+  display: flex;
+  flex-direction: column; /*coloca os elemenntos um sobre o outro*/
+  justify-content: center;
+  align-items: center;
+}
+
+.caixa a{
+  text-decoration: none;
+  color: #f00;
+}
+
+.caixa a:hover{
+  background-color: #f00;
+  color: white;
+}
+
+.texto{
+  color: #0f0;
+  font-size: 1em;
+}
