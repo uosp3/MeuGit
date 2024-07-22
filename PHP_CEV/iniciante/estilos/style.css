@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: opx;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(128, 128, 128, 0.514);
+    margin: 10px;    
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h1 {
+    background-color: rgba(0, 17, 255, 0.452);
+    margin: 20px auto;    
+    padding: 10px;
+    border-radius: 10px;
+    width: 700px;
+    text-align: center;
+    color: white;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px black;
+}
+
+div {            
+    display: block;   
+    border-radius: 10px;                
+    text-align: center;            
+}
+
+img {
+    width: 700px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: xx-large;
+}
+
+fieldset {
+    width: 400px;
+    margin: auto;
+    background-color: rgb(150, 150, 160);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+}
+
+.batao {
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    padding: 10px;
+    margin: 10px;
+}

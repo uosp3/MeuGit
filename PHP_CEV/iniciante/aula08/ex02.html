@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Modelo html</title>
+    <style>
+        div {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <script>
+       function anoAtu() {
+       let anoatual = document.getElementById("nasceu").value;
+       let dataAtual = new Date();
+       let esseAno = dataAtual.getFullYear();
+       if (anoatual > esseAno) {
+       alert ("Ano de nascimento inválido");
+       document.getElementById("nasceu").value = ""
+       }
+       }    
+    </script>
+    <h1>Passando dados do formulário.</h1>
+    <div>
+        <form action="02idade.php" method="get">
+            Nome: <input type="text" name="nome" required><br>
+            Ano de Nascimento: <input type="number" id="nasceu" name="ano" min="1900" onblur="anoAtu()" style="width: 60px;"  required value="2000"><br>
+            <fieldset style="width: 400px;">
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="masc" value="homem" checked>
+                <label for="masc">Masculino</label><br>
+                <input type="radio" name="sexo" id="fem" value="mulher">
+                <label for="fem">Feminino</label>
+            </fieldset>
+            <input type="submit" value="Enviar" style="margin: 10px;">
+        </form>
+    </div>
+</body>
+</html>
