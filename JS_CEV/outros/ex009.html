@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Ola visitante</h1>
+    <p>Informe no campo abaixo o seu país de origem!</p>
+    <input type="pais" name="" id="pais">
+    <input type="button" name="vernac" id="vernac" value="Verificar">
+    <div id="sauda"></div>
+    <script>
+        var pais=document.querySelector('input#pais')
+        var botao=document.querySelector('input#vernac')
+        botao.addEventListener('click', nacionalidade)
+        var res=document.querySelector('div#sauda')
+        function nacionalidade(){
+            if (pais.value.toUpperCase()=='BRASIL') {
+                res.innerHTML=`Seja bem-vindo,você é brasileiro `
+            }else{
+                res.innerHTML=`Seja bem-vindo, você é estrangeiro `
+            }
+        }
+    </script>
+</body>
+</html>

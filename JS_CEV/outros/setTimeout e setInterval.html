@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        
+    <title>setTimeout e setInterval</title>
+    <style>
+        #dv1{
+             width:100px;
+             height:100px;
+             border: 1px solid #000;
+             background-color: #fff;
+        }
+    </style>
+    <script>
+        var tmp
+        function mudaCor(){
+            var obj=document.getElementById("dv1");
+            var r=Math.floor(Math.random()*255);
+            var g=Math.floor(Math.random()*255);
+            var b=Math.floor(Math.random()*255);
+            obj.style.backgroundColor="rgb("+r+","+g+","+b+")";
+
+        }    
+        //var tmp=setTimeout(mudaCor,3000); // muda a cor depois de 3 segundos uma única vez
+        //var tmp=setInterval(mudaCor,3000)   //muda a cor a cada 3 segundos
+
+        function Iniciar(){
+            tmp=setInterval(mudaCor,1000)
+        }
+        
+        function Parar(){
+            clearInterval(tmp)
+        }
+
+        function addEventos(){
+                document.getElementById("bt1").addEventListener("click", Iniciar)
+                document.getElementById("bt2").addEventListener("click", Parar)
+        }
+
+        window.addEventListener("load",addEventos);
+        </script>
+</head>
+<body>
+        <div id="dv1"></div>
+        <br/>
+        <button id="bt1">Iniciar</button>
+        <button id="bt2">Parar</button>
+
+
+</body>
+</html>
