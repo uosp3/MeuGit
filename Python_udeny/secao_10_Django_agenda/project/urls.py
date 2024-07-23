@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include('contact.urls')),  # o '' busca o '' de contact.urls
+    path('', include('contact.urls')),  # o '' busca o '' de urls em contact
     path('admin/', admin.site.urls),
 ]
