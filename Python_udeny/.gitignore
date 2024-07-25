@@ -11,7 +11,8 @@ secao_9_Django/static_files
 *.pyc
 __pycache__
 db.sqlite3
-media
+media/
+static/
 
 #Backup files
 *.Bak
@@ -117,7 +118,6 @@ env
 .DS_Store
 local_settings.py
 __local_settings.py 
-static/
 
 #Add again for course purpose
 !db.sqlite3

@@ -62,3 +62,5 @@ python manage.py changepassword USERNAME <!-- esqueceu a senha? -->
 Documentação models:
 https://docs.djangoproject.com/pt-br/4.2/topics/db/models/
 https://docs.djangoproject.com/pt-br/4.2/ref/models/fields/#field-choices
+
+
