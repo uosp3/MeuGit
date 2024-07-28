@@ -42,7 +42,8 @@
       "javascript": "javascriptreact",
       "vue-html": "html",
       "vue": "html",
-      "blade": "html"
+      "blade": "html",
+      "django-html": "html"
   },
   "emmet.triggerExpansionOnTab": true,
   "emmet.preferences": {

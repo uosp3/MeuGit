@@ -15,13 +15,20 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, URLPattern, URLResolver  # chat gpt
 from django.conf.urls.static import static
 from django.conf import settings  # importa as config do settings
+from typing import Union
 
-urlpatterns = [
+urlpatterns: list[Union[URLPattern, URLResolver]] = [  # chat gpt
     path('', include('contact.urls')),  # o '' busca o '' de urls em contact
     path('admin/', admin.site.urls),
 ]
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-urlpatterns += static(settings.MEDIA_URL)
+# onde consta '# chat gpt' foram acréscimos feitos por que nas linhas
+# de adição(+=)urlpatterns o vscode estava mostrando erro de tipo e assim sendo
+# foi acrescido 'from typing import Union' e 'URLPattern, URLResolver'
+# nas importações e acrescido ': list[Union[URLPattern, URLResolver]]'
+# na linha 'urlpatterns: list[Union[URLPattern, URLResolver]] =...'

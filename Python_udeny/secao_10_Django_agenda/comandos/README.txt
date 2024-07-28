@@ -1,3 +1,6 @@
+# type: ignore
+# flake8: noqa
+
 Iniciar o projeto Django
 
 ```
@@ -64,3 +67,47 @@ https://docs.djangoproject.com/pt-br/4.2/topics/db/models/
 https://docs.djangoproject.com/pt-br/4.2/ref/models/fields/#field-choices
 
 
+Para habilitar o autocompletar de tags HTML em arquivos de templates Django no VS Code, você pode seguir algumas etapas para configurar corretamente o editor. O VS Code não reconhece automaticamente arquivos de template Django como arquivos HTML, então precisamos ajustar algumas configurações para garantir que o autocompletar funcione como esperado.
+
+### Passos para Configurar o VS Code
+
+1. **Extensão para Django**:
+   - Instale uma extensão que suporte Django. A extensão "Django" ou "Django Template" pode ajudar a adicionar suporte adicional para a sintaxe do Django no VS Code.
+
+2. **Configurar o Idioma do Arquivo**:
+   - Certifique-se de que o VS Code está tratando seus arquivos de template Django como arquivos HTML. Você pode fazer isso manualmente no editor:
+     - Abra um arquivo de template Django.
+     - Clique no ícone de seleção de linguagem no canto inferior direito do VS Code (onde aparece o tipo de arquivo, por exemplo, "Plain Text").
+     - Selecione "Configure File Association for ‘.html’" ou "Change Language Mode".
+     - Escolha "HTML" na lista de opções.
+
+3. **Configurações do Workspace**:
+   - Adicione configurações específicas ao seu workspace para reconhecer arquivos de template Django como HTML:
+     - Abra as configurações do VS Code (Ctrl + ,).
+     - No campo de busca, digite "files.associations".
+     - Clique em "Edit in settings.json" para adicionar a seguinte configuração:
+       ```json
+       "files.associations": {
+           "*.html": "html",
+           "*.htm": "html",
+           "*.djhtml": "html",
+           "*.jinja": "html"
+       }
+       ```
+     - Substitua ou adicione quaisquer extensões específicas que você usa para templates Django.
+
+4. **Emmet no VS Code**:
+   - Emmet é uma ferramenta poderosa para autocompletar e pode ser configurada para funcionar em arquivos HTML:
+     - Abra as configurações do usuário ou do workspace no VS Code.
+     - Adicione ou verifique se a configuração do Emmet está habilitada:
+       ```json
+       "emmet.includeLanguages": {
+           "django-html": "html"
+       }
+       ```
+     - Isso garante que o Emmet trate arquivos de template Django como HTML para autocompletar.
+
+5. **Recarregar o VS Code**:
+   - Após fazer essas alterações, recarregue o VS Code para que as configurações sejam aplicadas.
+
+Essas etapas devem ajudar a ativar o autocompletar para tags HTML em arquivos de templates Django no VS Code. Se você continuar enfrentando problemas, verifique se as extensões estão atualizadas e se não há conflitos com outras configurações.
