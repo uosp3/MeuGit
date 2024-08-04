@@ -112,7 +112,7 @@ LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'America/Sao_Paulo'
 
-USE_I18N = False
+USE_I18N = True  # Faz alteração do idioma
 
 USE_TZ = True
 
