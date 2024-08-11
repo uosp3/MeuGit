@@ -19,4 +19,5 @@ urlpatterns = [  # urls daqui devem ser referenciadas em 'urls.py' do 'project'
     path('user/create/', views.register, name='register'),  # name da url
     path('user/login/', views.login_view, name='login'),  # name da url
     path('user/logout/', views.logout_view, name='logout'),  # name da url
+    path('user/update/', views.user_update, name='user_update'),  # name da url
 ]
