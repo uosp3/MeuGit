@@ -21,8 +21,8 @@ python manage.py createsuperuser  - criar usuário admin
 python manage.py startapp usuarios  - cria um app
 apos a criação do app ele deve ser incluido em 'settings.py' em
     INSTALLED_APPS = [
-        'medico',
-        'paciente'
+        'projeto1',
+        'projeto2',
     ]
     
 incluir também em
@@ -42,4 +42,5 @@ fica assim: 'DIRS':[os.path.join(BASE_DIR,'templates')],
 enctype='multipart/form-data' necessário para que o form trabalhe com arquivos de mídia
 
 Parei https://www.youtube.com/watch?v=t9l81G-Fndk
-no instante 29:00min
+"E:\Cursos\MeuGit\Pythonando\novo_projeto_material_de_apoio\Finalizando_o_projeto_Aula_3_PSW_11.mp4"
+no instante 1:31 min
