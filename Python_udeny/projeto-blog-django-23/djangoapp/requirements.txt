@@ -1,0 +1,4 @@
+# https://www.udemy.com/course/python-3-do-zero-ao-avancado/learn/lecture/37872404#questions
+Django>=4.2.1,<4.3
+psycopg2-binary>=2.9.6,<2.10
+mysqlclient==2.1.0
