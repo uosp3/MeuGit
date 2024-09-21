@@ -23,3 +23,7 @@ def formata_preco(valor):
         "X", ".")  # Coloca o ponto no lugar certo
 
     return f"R$ {valor_formatado}"
+
+
+def cart_total_qtd(carrinho):
+    return sum([item['quantidade'] for item in carrinho.values()])
