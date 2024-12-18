@@ -46,13 +46,13 @@ class UserForm(forms.ModelForm):
         usuario_db = User.objects.filter(username=usuario_data).first()
         email_db = User.objects.filter(email=email_data).first()
 
-        error_msg_user_exists = 'Usuário já existe'
-        error_msg_email_exists = 'E-mail já existe'
+        error_msg_user_exists = 'Usuário ja existe'
+        error_msg_email_exists = 'E-mail ja existe'
         error_msg_password_match = 'As duas senhas não conferem'
-        error_msg_password_short = 'Sua senha precisa de pelo menos 6 caracteres'
-        error_msg_required_field = 'Este campo é obrigatório.'
+        error_msg_password_short = 'Senha precisa de pelo menos 6 caracteres'
+        error_msg_required_field = 'Este campo é obrigatório'
 
-        # Usuários logados: atualização
+        # usuários logados: atualização
         if self.usuario:
             if usuario_db:
                 if usuario_data != usuario_db.username:
@@ -92,4 +92,4 @@ class UserForm(forms.ModelForm):
                 validation_error_msgs['password'] = error_msg_password_short
 
         if validation_error_msgs:
-            raise(forms.ValidationError(validation_error_msgs))
+            raise (forms.ValidationError(validation_error_msgs))

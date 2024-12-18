@@ -8,7 +8,7 @@ from django.contrib.auth import authenticate, login, logout
 import copy
 
 from . import models
-from . import forms
+from . import forms_ori
 
 
 class BasePerfil(View):
@@ -27,22 +27,22 @@ class BasePerfil(View):
             ).first()
 
             self.contexto = {
-                'userform': forms.UserForm(
+                'userform': forms_ori.UserForm(
                     data=self.request.POST or None,
                     usuario=self.request.user,
                     instance=self.request.user,
                 ),
-                'perfilform': forms.PerfilForm(
+                'perfilform': forms_ori.PerfilForm(
                     data=self.request.POST or None,
                     instance=self.perfil
                 )
             }
         else:
             self.contexto = {
-                'userform': forms.UserForm(
+                'userform': forms_ori.UserForm(
                     data=self.request.POST or None,
                 ),
-                'perfilform': forms.PerfilForm(
+                'perfilform': forms_ori.PerfilForm(
                     data=self.request.POST or None
                 )
             }
