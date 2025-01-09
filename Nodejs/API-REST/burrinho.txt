@@ -1,0 +1,27 @@
+npm init -y => para criar o arquivo package.json
+npm install express --save => para instalar o módulo necessário para api-rest
+criar o arquivo app.js
+
+fazer as config do servidor local utilizando express
+  const express = require('express')
+  const app = express()
+  const port = 3000
+
+criar uma rota padrão para acessar a raiz do projeto
+  // criar rota padrão ou raiz
+  app.get('/', (req, res) => {
+    res.send('Olá Mundo!!!')
+  })
+
+definir escuta do servidor pela porta 3000
+  // escutar a porta 3000
+  app.listen(port, () => {
+    console.log(`Servidor rodando no endereço http://localhost:${port}`)
+  })
+
+instalar o nodemon
+  npm install nodemon -D => fazer a atualização do servidor sem precisar
+  ficar parando o mesmo.
+  no arquivo package.json incluir:"dev": "nodemon src/app.js"
+  "dev" é o nome do script, que será executado para att o servidor.
+  digitar : npm run dev 
